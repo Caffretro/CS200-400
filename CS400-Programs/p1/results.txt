@@ -1,0 +1,22 @@
+Testing priority queue class: NoPQ
+NoPQ FAIL: Unable to construct instance of NoPQ
+   0 TOTAL TESTS RUN
+Testing priority queue class: PQ01
+FAILED test06manyDataItems: PriorityQueue failed to handle 1 million elements
+FAILED test07insertNull: PriorityQueue failed to stop inserting null.
+   8 PASSED
+   2 FAILED
+  10 TOTAL TESTS RUN
+Testing priority queue class: PQ02
+FAILED test00isEmpty: unexpectedly threw java.lang.NullPointerException
+FAILED test06manyDataItems: PriorityQueue failed to handle 1 million elements
+   8 PASSED
+   2 FAILED
+  10 TOTAL TESTS RUN
+Testing priority queue class: PQ03
+FAILED test04insertRemoveMany: function is not complete that a NullPointer Exception is thrown
+FAILED test05duplicatesAllowed: duplicate elements are not supported by this PriorityQueue while 4 was supplied duplicately
+FAILED test06manyDataItems: PriorityQueue failed to handle 1 million elements
+   7 PASSED
+   3 FAILED
+  10 TOTAL TESTS RUN

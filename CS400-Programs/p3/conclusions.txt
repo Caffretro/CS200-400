@@ -1,0 +1,20 @@
+Complete the profiling part of the assignment using java flight recorder before 
+answering the following questions.
+
+
+1.) What can you tell about the performance of your hash table implementation compared to Java's tree map? Explain why it is better/worse.
+
+	Our HashTable is more efficient and less time-consuming than Java's tree map. That's because the purpose of establishing a HashTable is to keep the time complexity of insert(), get(), and remove() as close to O(1) as possible. Although we spent time to rehash our table, but that saves more time on get and push for our HashTable than Java's TreeMap. In contrast, TreeMap is implemented with a Red-Black tree, whose time complexity of add(), get(), and remove() are close to O(logN), and with a very large sample size, the time consumed will be amplified greatly with many TreeMap operations.
+
+
+
+
+
+
+
+
+
+
+
+2.) What did you observe in java mission control to come to the conclusion above?
+	In the trial which consumed about 55 seconds, the time spent on java.util.TreeMap is about 3 times than what HashTable did; also in hot methods, TreeMap's put and get are way more time consuming than the most time consuming part of HashTable, which is rehash. We can observe that as the size we are testing gets bigger, more difference will show up between TreeMap and HashTable.
